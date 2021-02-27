@@ -1,3 +1,4 @@
 module.exports = {
-    title: 'Lucas Azevedo'
+    title: 'Lucas Azevedo',
+    description: 'Web Developer'
 }
