@@ -6,7 +6,7 @@
       </span>
 
       <h1 class="title">Lucas Azevedo</h1>
-      <h2 class="description">Desenvolvedor Web</h2>
+      <h2 class="description">Web Developer</h2>
 
 
       <SocialLinks />
