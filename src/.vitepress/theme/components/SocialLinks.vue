@@ -12,6 +12,10 @@
         <Twitter />
     </a>
 
+    <a rel="me" class="link" data-title="mastodon.social/@lhs_azevedo" href="https://mastodon.social/@lhs_azevedo" target="_blank">
+        <Mastodon />
+    </a>
+
     <!-- {% if site.facebook %}
         <a class="link" data-title="facebook.com/{{ site.facebook }}" href="https://facebook.com/{{ site.facebook }}" target="_blank">
             <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
@@ -121,4 +125,5 @@
 import GitHub from './icons/GitHub.vue'
 import LinkedIn from './icons/LinkedIn.vue'
 import Twitter from './icons/Twitter.vue'
+import Mastodon from './icons/Mastodon.vue'
 </script>
