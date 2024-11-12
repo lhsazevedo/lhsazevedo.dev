@@ -1,4 +1,6 @@
 .DS_Store
-Thumbs.db
-src/.vitepress/dist
-node_modules
+_site
+.sass-cache
+Gemfile.lock
+.bundle
+vendor/
