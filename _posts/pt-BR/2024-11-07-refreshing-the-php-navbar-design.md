@@ -1,5 +1,5 @@
 ---
-title: "Renovando o design da nova barra de navegação e busca do PHP.net"
+title: "Renovando a barra de navegação e busca do PHP.net"
 lang: pt-BR
 layout: post
 date: 2024-11-10 23:45

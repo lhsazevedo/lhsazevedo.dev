@@ -1,5 +1,5 @@
 ---
-title: "Refreshing the new PHP.net navbar and search design"
+title: "Refreshing the PHP.net navbar and search"
 lang: en
 layout: post
 date: 2024-11-10 23:45
