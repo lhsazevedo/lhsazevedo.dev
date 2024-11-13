@@ -14,10 +14,13 @@
         <div class="share">
             <!-- Note: Only use three share links if your site width is set to large -->
             <!-- If site width is set to normal, you may choose any two share links -->
+            {% capture tweet_text %}
+                {{ site.url }}{{ page.url }} - {{ page.title | url_encode }} by @{{ site.authors[page.author].twitter }}
+            {% endcapture %}
             <a
                 class="twitter"
                 target="_blank"
-                href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }} - {{ page.title }} by @{{ site.authors[page.author].twitter }}"
+                href="https://twitter.com/intent/tweet?text={{ tweet_text | strip | url_encode }}"
             >
                 <i class="fa-brands fa-x-twitter"></i>
                 <span class="icon-x-twitter">Post</span>
@@ -32,10 +35,9 @@
                 <i class="fa-brands fa-facebook"></i>
                 <span class="icon-facebook-rect">Share</span>
             </a> -->
-
             <a
                 class="linkedin"
-                href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.url }}{{ page.url }}&amp;title={{ page.title }}&amp;summary={{ page.description }}&amp;source={{ site.url }}"
+                href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title | url_encode }}&summary={{ page.description | url_encode }}&source={{ site.url }}"
                 target="_blank"
             >
                 <i class="fa-brands fa-linkedin"></i>
