@@ -15,7 +15,7 @@
             <!-- Note: Only use three share links if your site width is set to large -->
             <!-- If site width is set to normal, you may choose any two share links -->
             {% capture tweet_text %}
-                {{ site.url }}{{ page.url }} - {{ page.title }} by @{{ site.authors[page.author].twitter }}
+                {{ page.title }} by @{{ site.authors[page.author].twitter }} - {{ site.url }}{{ page.url }}
             {% endcapture %}
             <a
                 class="twitter"
