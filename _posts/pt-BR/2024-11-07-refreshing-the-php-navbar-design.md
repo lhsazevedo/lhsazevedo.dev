@@ -23,7 +23,8 @@ nova [página de lançamentos](https://www.php.net/releases/8.3) para o PHP 8,
 lançada em novembro de 2020. Esse redesign não só modernizou a identidade visual
 da marca, mas também fez um excelente trabalho em apresentar o que há de novo no
 PHP. Em seguida, outras duas páginas também receberam um pouco de atenção: a
-nova seção principal da página inicial[^1] e a página de agradecimentos[^2].
+[nova seção principal da home](https://github.com/php/web-php/pull/459) e a
+[página de agradecimentos](https://github.com/php/web-php/pull/684).
 
 Com essas melhorias, outras áreas do site que ainda não tinham sido renovadas
 começaram a se destacar, e uma delas foi a barra de navegação e sua interface de
@@ -67,13 +68,14 @@ avançou muito.
 No processo de tomada de decisões em grupo, atingir um consenso fica cada vez
 mais difícil conforme o escopo e o número de pessoas envolvidas aumentam. Uma
 abordagem alternativa para esses casos é focar em mudanças incrementais menores
-e seguir o método de [consentimento ao invés de
-consenso](https://www.hoop.app/blog/choose-consent-over-consensus-for-better-decision-making)
-para a tomada de decisões ([saiba mais](https://www.sociocracyforall.org/pt-br/tomada-de-decisao-por-consentimento/)).
+e seguir o método de consentimento ao invés de consenso para a tomada de
+decisões[^con1][^con2].
 
 Seguindo esses princípios, concluí que começar com um componente menor seria uma
-ideia melhor. Escolhi uma parte de uma das minhas iterações[^3] na proposta de
-redesign completo que pareceu ter sido bem recebida pela comunidade: a navbar.
+ideia melhor. Escolhi um de [uma iteração
+minha](https://github.com/php/web-php/pull/602#issuecomment-1207166889) na
+proposta de redesign completo que pareceu ter sido bem recebido pela comunidade:
+a barra de navegação.
 
 <figure class="bigger-image">
     <a
@@ -132,7 +134,7 @@ A busca existente foi implementada no lado do cliente usando um índice JSON das
 páginas do manual. Embora essa talvez não seja a melhor abordagem para um site
 grande como o PHP.net, substituir por uma implementação no servidor estaria além
 do escopo desta proposta. Em vez disso, foquei em remover a dependência do
-JQuery e corrigir os problemas mais críticos[^4][^5], o que resultou em
+JQuery e corrigir os problemas mais críticos[^3][^4], o que resultou em
 melhorias significativas no curto prazo com esforço relativamente mínimo. A nova
 interface foi implementada usando JavaScript puro, com acessibilidade e melhoria
 progressiva em mente, como veremos nas próximas seções.
@@ -191,8 +193,7 @@ integrar as objeções.
 
 ## Notas
 
-[^1]: [PR: Melhora design da seção principal da página inicial](https://github.com/php/web-php/pull/459)
-[^2]: [PR: Moderniza a metade superior da página de agradecimentos](https://github.com/php/web-php/pull/684)
-[^3]: [Redesign conservador](https://github.com/php/web-php/pull/602#issuecomment-1207166889)
-[^4]: [PR: Melhora geração de índice de busca para PHP.net](https://github.com/php/phd/pull/154)
-[^5]: [PR: Corrige índice para páginas sem livro pai](https://github.com/php/phd/pull/160)
+[^con1]: [Choose Consent Over Consensus For Better Decision Making](https://www.hoop.app/blog/choose-consent-over-consensus-for-better-decision-making)
+[^con2]: [Tomada de decisão por consentimento](https://www.sociocracyforall.org/pt-br/tomada-de-decisao-por-consentimento/)
+[^3]: [PR: Melhora geração de índice de busca para PHP.net](https://github.com/php/phd/pull/154)
+[^4]: [PR: Corrige índice para páginas sem livro pai](https://github.com/php/phd/pull/160)

@@ -20,9 +20,10 @@ description: The process of designing and implementing the new PHP.net navbar an
 If you haven't visited [PHP.net](https://www.php.net) in a while, you might have
 missed some recent facelifts. The most notable update was the new [release
 page](https://www.php.net/releases/8.3) for PHP 8, launched in November 2020.
-This refresh not only modernized the brand look but also did an excellent job
-at showcasing what's new in PHP. Following that, other two pages also got some
-attention: the new home hero section[^1] and the thanks page[^2].
+This refresh not only modernized the brand look but also did an excellent job at
+showcasing what's new in PHP. Following that, other two pages also got some
+attention: the [new home hero section](https://github.com/php/web-php/pull/459)
+and the [thanks page](https://github.com/php/web-php/pull/684).
 
 With those improvements, some other areas that had not yet been refreshed
 started to feel a bit off, and one of them was the navigation bar and its search
@@ -66,14 +67,13 @@ the discussion didn't progress much further.
 During the process of decision-making in groups, reaching consensus gets harder
 and harder as the scope and number of people involved increases. An alternative
 approach for these cases is to focus on smaller incremental changes, and follow
-a [consent over
-consensus](https://www.hoop.app/blog/choose-consent-over-consensus-for-better-decision-making)
-method for decision-making ([read
-more](https://www.sociocracyforall.org/consent-decision-making/)).
+a consent over consensus method for decision-making[^con1][^con2].
 
 Following this principle, I figured it would be a better idea to start with a
-smaller component. I choose one from one of my iterations[^3] in the full
-redesign proposal that seemed to be well received by the community: the navbar.
+smaller component. I choose one from [my
+iteration](https://github.com/php/web-php/pull/602#issuecomment-1207166889) in
+the full redesign proposal that seemed to be well received by the community: the
+navigation bar.
 
 <figure class="bigger-image">
     <a
@@ -131,7 +131,7 @@ The existing search was implemented client-side using a JSON index of the manual
 pages. While this may not be the best approach for a large site like PHP.net,
 replacing it with a server-side implementation was beyond this proposal's scope.
 Instead, I focused on removing the JQuery dependency and fixing the most
-critical issues[^4][^5] it had, which resulted in significant short-term
+critical issues[^3][^4] it had, which resulted in significant short-term
 improvements with relatively minimal effort. The new UI was implemented using
 vanilla JavaScript with accessibility and progressive enhancement in mind, as
 we'll see in the next sections.
@@ -188,8 +188,7 @@ but focus your efforts on integrating the objections.
 
 ## Notes
 
-[^1]: [PR: Improve homepage hero design](https://github.com/php/web-php/pull/459)
-[^2]: [PR: Modernize top half of Thanks page](https://github.com/php/web-php/pull/684)
-[^3]: [Conservative redesign](https://github.com/php/web-php/pull/602#issuecomment-1207166889)
-[^4]: [PR: Improve search index generation for PHP.net](https://github.com/php/phd/pull/154)
-[^5]: [PR: Fix search index for pages without parent book](https://github.com/php/phd/pull/160)
+[^con1]: [Choose Consent Over Consensus For Better Decision Making](https://www.hoop.app/blog/choose-consent-over-consensus-for-better-decision-making)
+[^con2]: [Consent decision making](https://www.sociocracyforall.org/consent-decision-making/)
+[^3]: [PR: Improve search index generation for PHP.net](https://github.com/php/phd/pull/154)
+[^4]: [PR: Fix search index for pages without parent book](https://github.com/php/phd/pull/160)
