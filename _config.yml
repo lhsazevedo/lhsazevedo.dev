@@ -102,6 +102,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-polyglot
+  - jekyll-target-blank
 
 compress_html:
   ignore:
